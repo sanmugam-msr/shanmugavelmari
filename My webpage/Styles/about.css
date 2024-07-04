@@ -1,14 +1,14 @@
 /* General Styles */
 body, html {
     margin: 0;
-    padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: white;
+    background: url("background.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    color: #fff;
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -20,8 +20,10 @@ a {
 
 /* Navigation Bar */
 nav {
-    background-color: #1f1f1f;
-    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .logo {
@@ -34,6 +36,7 @@ nav {
 .nav-links {
     display: inline-block;
     float: right;
+    font-weight: bold;
 }
 
 .nav-links li {
@@ -50,14 +53,12 @@ nav {
     padding: 50px 0;
     text-align: center;
     text-align: justify;
-    text
+    
 }
 
 .about-content {
     text-align: left;
-    background-color: #1f1f1f;
-    padding: 20px;
-    border-radius: 8px;
+   
 }
 
 .about-info {

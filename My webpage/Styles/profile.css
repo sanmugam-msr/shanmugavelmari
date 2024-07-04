@@ -1,102 +1,148 @@
-/* General Styles */
 body, html {
     margin: 0;
     padding: 0;
-     font-family: 'Roboto', sans-serif;;
-    background-color: #121212;
+    font-family: Arial, sans-serif;
     color: white;
-    
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: rgba(0, 0, 0, 0.8);
 }
 
-/* Navigation Bar */
-nav {
-    background-color: #1f1f1f;
-    padding: 10px 0;
+header h1 {
+    margin: 0;
 }
 
-.logo {
-    display: inline-block;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff9800;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.nav-links {
-    display: inline-block;
-    float: right;
-}
-
-.nav-links li {
-    display: inline;
+nav ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 .nav-links a:hover {
     color: #ff9800;
 }
 
-/* Home Section */
-#home {
-    padding: 50px 0;
-    text-align: center;
+main {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 50px;
 }
 
-.home-content {
-    display: inline-block;
-    text-align: left;
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%; /* Adjust width to fit content */
+    height: auto; /* Adjust height as needed */
 }
 
-.home-img {
-    display: inline-block;
-    float: right;
+.introduction, .experience, .projects {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 0.5rem; /* Reduced padding inside the section */
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance glass effect */
+    width: 100%;
+    margin-bottom: 10px; /* Reduced margin-bottom */
+    transform: translateY(-20px); /* Adjust transform as needed */
 }
 
-.home-img img {
+
+.introduction h2, .experience h2, .projects h2 {
+    font-size: 22px; /* Slightly larger font size */
+    margin-bottom: 5px;
+    transform: translateY(-20px); 
+}
+
+.introduction p, .experience ul, .projects ul {
+    font-size: 14px;
+    line-height: 1.6;
+    transform: translateY(-10px); 
+  
+}
+
+.experience ul, .projects ul {
+    padding-left: 20px;
+}
+
+.experience li, .projects li {
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%; /* Adjust width to fit content */
+}
+
+.profile-pic {
     width: 300px;
-    image-resolution: 100%;
-    size: 400px;
-
+    height: 300px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-inline-end: 10px;
+    margin: 0 auto;
+    transform: translateY(-70px); /* Adjust the value as needed */
+    border: 5px solid #97cff4; /* Adjust the border size and color as needed */
 }
 
-.highlight {
-    color: #ff9800;
+
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+.info {
+    text-align: center;
+    
 }
 
-.buttons .btn {
-    background-color: #ff9800;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px 0;
-    display: inline-block;
+.info h2, .info p {
+    margin: 0;
+    padding-inline-end: 10px;
+    transform: translateY(-50px); 
 }
 
-.buttons .btn:hover {
-    background-color: #e67e22;
-}
-.social-media {
+.social {
     margin-top: 20px;
 }
 
-.social-link img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+.social a {
     margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.social-link img:hover {
-    transform: scale(1.2);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
